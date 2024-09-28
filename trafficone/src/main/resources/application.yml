@@ -1,0 +1,17 @@
+spring:
+
+  application:
+    name: trafficone
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/traffic-one?useSSL=false&useUnicode=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456789
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true

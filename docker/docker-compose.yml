@@ -5,14 +5,13 @@ services:
     platform: linux/amd64
     environment:
       MYSQL_ROOT_PASSWORD: 123456789
-      MYSQL_DATABASE: trafficeone
-      MYSQL_USER: root
+      MYSQL_DATABASE: traffic-one
+      MYSQL_USER: jaeha
       MYSQL_PASSWORD: 123456789
     ports:
       - "3306:3306"
     volumes:
-      - mysql_data:/var/lib/mysql
+      - db_data:/var/lib/mysql
 
 volumes:
-  mysql_data:
-    driver: local
+  db_data:
