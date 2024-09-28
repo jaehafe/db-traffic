@@ -5,7 +5,7 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/traffic-one?useSSL=false&useUnicode=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3306/trafficone?useSSL=false&useUnicode=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: root
     password: 123456789
 
@@ -15,3 +15,16 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+#  logging:
+#    level:
+#      root: INFO
+#      com.jet.be.entity: DEBUG
+
+#logging:
+#  level:
+#    org.hibernate.SQL: DEBUG
+#    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
