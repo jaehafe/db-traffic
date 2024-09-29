@@ -29,6 +29,9 @@ dependencies {
     implementation("com.h2database:h2")
     runtimeOnly("com.mysql:mysql-connector-j")
 
+    // swagger
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0")
+
     implementation("org.springframework.boot:spring-boot-starter-web")
 
     compileOnly("org.projectlombok:lombok")
